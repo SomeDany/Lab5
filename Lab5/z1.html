@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Веклич Д.Н.</title>
+                
+        </head>
+            <body>
+                <script>
+                    "use strict";
+                    let str = prompt("Введите строку на латинице","");
+                    let kd=0;
+                    let kc=0;
+                    let n = str.length;
+                    document.write("Введенная строка ",str);
+                    for(let i=0;i<n;i++){
+                        if(str[i]=="D"){
+                            kd++;
+                        }
+                        if(str[i]=="C"){
+                            kc++;
+                        }
+                    }
+                    
+                    str = str.split('**').join('')
+                    
+                    document.write("<br \/> <br \/> Количество символов D: ",kd);
+                    document.write("<br \/> Количество символов C: ",kc);
+                    document.write("<br \/> Строка с заменой: ",str);
+                </script>
+            </body>
+    </html>
